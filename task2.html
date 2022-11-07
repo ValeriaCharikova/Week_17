@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      textarea:focus::-webkit-textarea-placeholder {
+        color: transparent;
+      }
+      textarea:focus:-moz-placeholder {
+        color: transparent;
+      }
+      textarea:focus::-moz-placeholder {
+        color: transparent;
+      }
+      textarea:focus:-ms-textarea-placeholder {
+        color: transparent;
+      }
+      div {
+        margin: 10px;
+        margin-left: 0px;
+      }
+      #result {
+        border: 1px solid black;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="comment">Оставьте комментарий:</label>
+    <div>
+      <textarea
+        id="comment"
+        rows="10"
+        cols="50"
+        placeholder="Введите текст..."
+      ></textarea>
+    </div>
+    <input type="button" value="Сохранить" onclick="checkSpam()" />
+    <div>
+      <label for="result">Ваш комментарий:</label>
+      <div id="result"></div>
+    </div>
+
+    <script src="./task2.js"></script>
+  </body>
+</html>
